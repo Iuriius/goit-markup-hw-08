@@ -1,0 +1,37 @@
+.about-us__background {
+    background-color: var(--background-color-secondary);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.about-us__block {
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.about-us__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.about-us__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.about-us__component {
+    width: 450px;
+}
