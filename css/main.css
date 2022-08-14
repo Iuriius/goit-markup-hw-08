@@ -1467,12 +1467,27 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+  margin-top: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .buttons-portfolio {
@@ -1517,6 +1532,25 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
+  .container__example-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__example-cards {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__example-cards {
+    ustify-content: center;
+  }
 }
 
 .example-card {
@@ -1568,6 +1602,16 @@ label {
   position: relative;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .example-thumb {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .example-thumb {
+    width: 370px;
+  }
+}
 
 .text-overlay {
   color: var(--tertiary-color);
@@ -1581,6 +1625,16 @@ label {
   border: 1px solid #EEEEEE;
   border-top: none;
   padding: 20px 24px;
+}
+@media screen and (min-width: 768px) {
+  .container__example-card-descr {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__example-card-descr {
+    width: 370px;
+  }
 }
 
 .example-card__name {

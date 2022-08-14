@@ -3,9 +3,19 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    margin-top: 60px;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-right: 15px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
+
 }
 
 .buttons-portfolio {
@@ -40,6 +50,18 @@
     gap: 30px;
     justify-content: center;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 480px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 1200px) {
+        ustify-content: center;
+    }
 }
 
 .example-card {
@@ -79,6 +101,15 @@
 .example-thumb {
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+
 }
 
 .text-overlay {
@@ -93,6 +124,14 @@
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }
 
 .example-card__name {
