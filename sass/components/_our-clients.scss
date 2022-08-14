@@ -6,6 +6,10 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
 .our-clients__list {
@@ -33,11 +37,19 @@
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 
-
     &:hover,
     &:focus {
         fill: var(--accent-color);
         border: 1px solid var(--accent-color);
+    }
 
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
     }
 }

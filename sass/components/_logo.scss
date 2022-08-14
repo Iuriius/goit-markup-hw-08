@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 2;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
@@ -11,6 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1;
+    }
 }
 
 .logopart--black {

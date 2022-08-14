@@ -1,5 +1,10 @@
 .about-us__section {
     max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .about-us__background {
@@ -11,11 +16,27 @@
     width: 450px;
     height: 120px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .about-us__block {
     width: 450px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .about-us__title {
@@ -38,4 +59,19 @@
 
 .about-us__component {
     width: 450px;
+
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }

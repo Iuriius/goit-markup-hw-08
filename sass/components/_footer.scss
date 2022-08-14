@@ -2,6 +2,14 @@
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+    }
 }
 
 /**
@@ -31,6 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .footer__info:not(:last-child) {
@@ -67,6 +79,10 @@
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .footer__social-link {
@@ -104,6 +120,8 @@
 */
 .footer__sucscribe-form {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__subscribe-call {
@@ -118,6 +136,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        margin-bottom: 20px;
+        justify-content: flex-start;
+    }
+}
+
+.footer_input-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+
+    }
 }
 
 .footer_subscribe-field {
@@ -138,6 +173,17 @@
     &::placeholder {
         padding: 15px;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .footer__subscribe-btn {
@@ -146,6 +192,8 @@
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    outline: none;
 
     font-weight: 700;
     font-size: 16px;
@@ -168,9 +216,65 @@
         background-color: var(--button-accent-color);
         cursor: pointer;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 
 .footer__send-icon {
     fill: #FFFFFF;
     margin-left: 9px;
+}
+
+.footer__tab-flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+}
+
+.footer__container-only {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+}
+
+.footer__subscribe-div {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+}
+
+.footer_join {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.footer__subscribe-div {
+    @media screen and (min-width: 1200px) {}
+}
+
+.footer__logo-and-address {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 70px;
+    }
 }
