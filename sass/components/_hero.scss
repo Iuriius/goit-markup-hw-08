@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../../images/jpg/hero-bg-sm.jpg");
+        url("./images/jpg/hero-bg-sm.jpg");
 
     display: flex;
     justify-content: center;
@@ -14,13 +14,13 @@
 
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("../../images/jpg/hero-bg-md.jpg");
+            url("./images/jpg/hero-bg-md.jpg");
     }
 
     @media screen and (min-width: 1200px) {
         height: 600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("../../images/jpg/hero-bg-lg.jpg");
+            url("./images/jpg/hero-bg-lg.jpg");
     }
 }
 
