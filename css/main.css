@@ -1855,7 +1855,7 @@ label {
   text-decoration: none;
 }
 
-.link--pseudoelement {
+.link--element {
   color: var(--accent-color);
   font-weight: 500;
   font-size: 18px;
@@ -1868,10 +1868,10 @@ label {
   -webkit-transition-timing-function: var(--cubic);
           transition-timing-function: var(--cubic);
 }
-.link--pseudoelement:hover, .link--pseudoelement:focus {
+.link--element:hover, .link--element:focus {
   color: var(--secondary-color);
 }
-.link--pseudoelement:not(:last-child):after {
+.link--element:not(:last-child):after {
   content: "   |   ";
   color: var(--secondary-color);
 }
