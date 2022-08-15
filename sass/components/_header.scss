@@ -5,19 +5,50 @@
 .container-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .container-header__nav {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 50px;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        visibility: visible;
+    }
 }
 
 .container-header__contacts {
-    display: flex;
+    display: none;
     gap: 50px;
     margin-left: auto;
     align-items: center;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        visibility: visible;
+    }
 }
 
 .nav {

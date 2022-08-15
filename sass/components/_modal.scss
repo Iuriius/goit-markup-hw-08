@@ -42,6 +42,21 @@
     transition-property: opacity, pointer-events, visibility;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal__btn--close {
@@ -132,6 +147,14 @@ label {
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
 }
 
 .modal__component {
@@ -237,6 +260,7 @@ label {
 .policy__link {
     text-underline-offset: 3px;
     color: var(--accent-color);
+
 }
 
 .policy__line {
@@ -252,6 +276,18 @@ label {
     &:hover {
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .checkbox {
@@ -262,8 +298,23 @@ label {
 .checked {
     position: absolute;
     display: flex;
-    top: 5px;
-    left: 18px;
+
+    @media screen and (min-width: 480px) {
+        top: 3px;
+        left: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 3px;
+        left: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 5px;
+        left: 18px;
+    }
+
+
 }
 
 .checked {
