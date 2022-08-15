@@ -49,8 +49,13 @@
     }
 
     @media screen and (min-width: 1200px) {
+        gap: 50px;
+        margin-left: auto;
+        align-items: center;
         display: flex;
+        flex-direction: row;
         visibility: visible;
+
     }
 }
 
