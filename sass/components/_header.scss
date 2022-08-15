@@ -19,8 +19,8 @@
     }
 
     @media screen and (min-width: 768px) {
-        display: none;
-        visibility: hidden;
+        display: flex;
+        visibility: visible;
     }
 
     @media screen and (min-width: 1200px) {
@@ -41,8 +41,11 @@
     }
 
     @media screen and (min-width: 768px) {
-        display: none;
-        visibility: hidden;
+        gap: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        visibility: visible;
     }
 
     @media screen and (min-width: 1200px) {
@@ -91,6 +94,10 @@
     &:focus {
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
 }
 
 .contacts__phone {
@@ -111,6 +118,10 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
     }
 }
 
