@@ -156,8 +156,22 @@
     }
 }
 
-
 .mobmenu-socials {
     margin-top: 64px;
     text-align: center;
+}
+
+.mobmenu-open-btn {
+    color: none;
+    background-color: none;
+    fill: currentColor;
+
+    &:hover,
+    &focus {}
+}
+
+.mobmenu-close-btn {
+
+    &:hover,
+    &focus {}
 }

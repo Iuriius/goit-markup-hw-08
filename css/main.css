@@ -1980,4 +1980,10 @@ label {
 .mobmenu-socials {
   margin-top: 64px;
   text-align: center;
+}
+
+.mobmenu-open-btn {
+  color: none;
+  background-color: none;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
