@@ -6,6 +6,7 @@
     position: absolute;
     top: 7px;
     right: 7px;
+    background-color: rgba(0, 0, 0, 0);
 
     @media screen and (min-width: 480px) {
         display: flex;
@@ -22,7 +23,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .menu-container {
@@ -159,19 +160,4 @@
 .mobmenu-socials {
     margin-top: 64px;
     text-align: center;
-}
-
-.mobmenu-open-btn {
-    color: none;
-    background-color: none;
-    fill: currentColor;
-
-    &:hover,
-    &focus {}
-}
-
-.mobmenu-close-btn {
-
-    &:hover,
-    &focus {}
 }
