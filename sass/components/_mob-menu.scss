@@ -104,7 +104,24 @@
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: var(--button-accent-color);
+    }
+}
+
+.mobmenu-navlink--current {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--button-accent-color);
     }
 }
 
@@ -153,11 +170,11 @@
     }
 
     &--li {
-        margin-bottom: 64px;
+        margin-bottom: 30px;
     }
 }
 
 .mobmenu-socials {
-    margin-top: 64px;
+    margin-top: 30px;
     text-align: center;
 }

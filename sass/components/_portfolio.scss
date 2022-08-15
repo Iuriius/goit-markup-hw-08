@@ -1,9 +1,10 @@
 .container__buttons {
     gap: 8px;
+    row-gap: 15px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-right: 15px;
