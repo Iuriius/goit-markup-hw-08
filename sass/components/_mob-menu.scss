@@ -41,7 +41,7 @@
     z-index: 999;
 
     transform: translateX(100%);
-    transition: transform 250ms var(--cubic-animation);
+    transition: transform 250ms var(--cubic);
 }
 
 .menu-container.is-open {

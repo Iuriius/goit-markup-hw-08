@@ -7,7 +7,6 @@
     padding-bottom: 30px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-right: 15px;
 
     @media screen and (min-width: 768px) {
         justify-content: center;
@@ -149,4 +148,18 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+}
+
+.example-card-img {
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }
