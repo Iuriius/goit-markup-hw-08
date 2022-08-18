@@ -32,11 +32,13 @@
     @media screen and (min-width: 768px) {
         width: 354px;
         height: 536px;
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
         width: 270px;
         height: 428px;
+        margin-bottom: 0;
     }
 }
 
@@ -76,8 +78,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    color: var(--social-links-grey);
 
-    transition-property: fill;
+    transition-property: color background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 
@@ -85,15 +88,11 @@
     &:focus {
         color: var(--tertiary-color);
         background-color: var(--accent-color);
-
-        & .our-team__socials-svg {
-            fill: var(--tertiary-color);
-        }
     }
 }
 
 .our-team__socials-svg {
-    fill: var(--social-links-grey);
+    fill: currentColor;
 }
 
 .our-team__image {

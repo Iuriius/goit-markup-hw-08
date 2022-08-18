@@ -58,7 +58,6 @@ address {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -406,6 +405,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .hero__section {
+    margin-bottom: 0px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/jpg/hero-bg-md.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/jpg/hero-bg-md.jpg");
   }
@@ -418,6 +418,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
+    margin-bottom: 0px;
     max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/jpg/hero-bg-lg.jpg");
@@ -493,6 +494,8 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -543,10 +546,14 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (max-width: 768px) {
+  .about-us__title {
+    text-align: center;
+  }
 }
 
 .about-us__text {
@@ -720,12 +727,14 @@ address {
   .our-team__card {
     width: 354px;
     height: 536px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .our-team__card {
     width: 270px;
     height: 428px;
+    margin-bottom: 0;
   }
 }
 
@@ -777,8 +786,9 @@ address {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  -webkit-transition-property: fill;
-  transition-property: fill;
+  color: var(--social-links-grey);
+  -webkit-transition-property: color background-color;
+  transition-property: color background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--cubic);
@@ -788,12 +798,9 @@ address {
   color: var(--tertiary-color);
   background-color: var(--accent-color);
 }
-.our-team__social-link:hover .our-team__socials-svg, .our-team__social-link:focus .our-team__socials-svg {
-  fill: var(--tertiary-color);
-}
 
 .our-team__socials-svg {
-  fill: var(--social-links-grey);
+  fill: currentColor;
 }
 
 .our-team__image {
@@ -1275,6 +1282,11 @@ address {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footer_join {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer_join {
     display: -webkit-box;
@@ -1565,6 +1577,7 @@ label {
   color: var(--secondary-color);
   line-height: 1.16;
   letter-spacing: 0.01em;
+  margin-top: 8px;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 250ms;
@@ -1722,7 +1735,7 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -1734,10 +1747,12 @@ label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container__buttons {
+    padding-bottom: 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
